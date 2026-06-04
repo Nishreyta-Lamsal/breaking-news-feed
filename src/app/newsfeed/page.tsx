@@ -105,7 +105,7 @@ export default function NewsFeed() {
     <div className="news-feed">
       <h1>Breaking News</h1>
 
-      {error && <p style={{ color: "red" }}>Error: {error}</p>}
+      {error && <p className="text-red-600">Error: {error}</p>}
 
       {pendingArticles.length > 0 && (
         <button onClick={handleLoadNewArticles}>
